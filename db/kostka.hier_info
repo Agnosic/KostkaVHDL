@@ -1,0 +1,28 @@
+|kostka
+clk => ~NO_FANOUT~
+Button => Selector11.IN1
+Button => Selector10.IN1
+reset => st_now.k6.OUTPUTSELECT
+reset => st_now.k5.OUTPUTSELECT
+reset => st_now.k4.OUTPUTSELECT
+reset => st_now.k3.OUTPUTSELECT
+reset => st_now.k2.OUTPUTSELECT
+reset => st_now.k1.OUTPUTSELECT
+reset => Selector11.IN2
+reset => Selector1.IN7
+reset => Selector2.IN7
+reset => Selector3.IN7
+reset => Selector5.IN7
+reset => Selector7.IN7
+reset => Selector10.IN2
+reset => Selector10.IN3
+reset => Selector11.IN3
+seg[0] <= seg[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.300 ns
+From           : reset
+To             : st_next.k2_260
+From Clock     : --
+To Clock       : Button
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 34.400 ns
+From           : st_next.k4_220
+To             : seg[3]
+From Clock     : reset
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 26.500 ns
+From           : reset
+To             : seg[3]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.600 ns
+From           : reset
+To             : seg[4]$latch
+From Clock     : --
+To Clock       : reset
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Button'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 60.98 MHz ( period = 16.400 ns )
+From           : st_next.k4_220
+To             : st_next.k5_200
+From Clock     : Button
+To Clock       : Button
+Failed Paths   : 0
+
+Type           : Clock Setup: 'reset'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 60.98 MHz ( period = 16.400 ns )
+From           : st_next.k4_220
+To             : st_next.k5_200
+From Clock     : reset
+To Clock       : reset
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
