@@ -30,7 +30,7 @@ ON
 # case_insensitive
 # source_file
 kostka.vhd
-cf15695a529cc19a98f054b51f622d21
+74b74a7e300563f12221e75273a9881
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

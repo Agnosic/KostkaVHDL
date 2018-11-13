@@ -58,3 +58,4 @@ set_location_assignment PIN_11 -to seg[4]
 set_location_assignment PIN_12 -to seg[5]
 set_location_assignment PIN_13 -to seg[6]
 set_global_assignment -name MISC_FILE "C:/altera/90sp2/VHDL/kostka.dpf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE kostka.vwf
