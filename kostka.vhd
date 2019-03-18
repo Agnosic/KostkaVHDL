@@ -16,36 +16,36 @@ begin
 
     process (clk)
      begin
-		if rising_edge(clk) then
-			if (reset = '1') then
-			   st_now <= k0;
-			else 
-				st_now <= st_next;
-			end if;
+	if rising_edge(clk) then
+		if (reset = '0') then
+		   st_now <= k0;
+		else 
+			st_now <= st_next;
 		end if;
+	end if;
     end process;
     
-process(st_now)
+process(clk)
   
      begin
         
     case st_now is
         when k1 => 
-            if(button = '1') then
+            if(button = '0') then
                 seg <= "1111001";    
                                   
             else
                 st_next <= k2;
             end if;
         when k2 => 
-            if(button = '1') then
+            if(button = '0') then
                 seg <= "0100100";
             else
                st_next <= k3;
             end if;
       
         when k3 =>
-            if(button = '1') then
+            if(button = '0') then
                 seg <= "0110000";
             else
                 st_next <= k4;
@@ -53,7 +53,7 @@ process(st_now)
             
 
         when k4 =>
-            if(button = '1') then
+            if(button = '0') then
                 seg <= "0011001";
             else
                 st_next <= k5;
@@ -61,7 +61,7 @@ process(st_now)
 
                 
         when k5  =>
-            if(button = '1') then
+            if(button = '0') then
                 seg <= "0010010";
              else
                 st_next <= k6;
@@ -69,7 +69,7 @@ process(st_now)
 
                 
         when k6 => 
-             if(button = '1') then
+             if(button = '0') then
                 seg <= "0000010";            
              else
                 st_next <= k1; 
